@@ -9,7 +9,7 @@ var buf = new buffer(fs.readFileSync("index.html"));
 app.get('/', function(request, response) {
 
 
-response.send(buffer.toString('utf-8'));
+response.send(buf.toString('utf-8'));
 
 
 });
