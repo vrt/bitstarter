@@ -9,7 +9,7 @@ var fs = require('fs');
 app.get('/', function(request, response) {
 
 
-response.send(fs.readFukeSync("./index.html").toString());
+response.send(fs.readFileSync("./index.html").toString());
 
 
 });
